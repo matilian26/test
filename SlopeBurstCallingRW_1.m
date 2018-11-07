@@ -23,8 +23,8 @@ for n=1:length(SpotDiff)
        SmoothParticles(n).RawSlope=diff(SmoothParticles(n).Smoothed)./([diff(ElapsedTime(nc14:(nc14+100)))]');
        end
 %Slope thresholds
-ONThreshold=200; %377; %2000;  %6/20/18 thinking ~288AU=1 polymerase so 1500 ~ 5ish polymerases %Gain of 34 for green
-OFFThreshold=-200; %-377; %-2000;
+ONThreshold=211; %200; %377; %2000;  %6/20/18 thinking ~288AU=1 polymerase so 1500 ~ 5ish polymerases %Gain of 34 for green
+OFFThreshold=-211; %-200; %-377; %-2000;
        %OFFThresholdSlope=dx<=Q;
 % AboveLine=[SmoothParticles(ss).Smoothed];
 % AboveLine(~ONThresholdSlope)=nan;
